@@ -1,13 +1,11 @@
 document.getElementById('rock').onclick = user;
 document.getElementById('paper').onclick = user;
 document.getElementById('scissors').onclick = user;
-
-
 function user(){
-    var userChoice = this.id;
+    let userChoice = this.id;
     console.log("User: " + userChoice)
 
-    var computerChoice = Math.random();
+    let computerChoice = Math.random();
          if (computerChoice < 0.34) {
              computerChoice = "rock";
           }else if(computerChoice <= 0.67) {
